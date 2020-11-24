@@ -1,2 +1,13 @@
 <!--goods/goods.wxml-->
-<text>goods/goods.wxml</text>
+<view class="page-body">
+  <view class="btn-area" id="buttonContainer">
+    <view class="button-sp-area">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <button type="primary" plain="true"  id="tapTest" data-hi="Weixin" bindtap="tapName">登录</button>
+    </view>
+    <view>{{userInfo}}</view>
+    <view>{{msg}}</view>
+  </view>
+</view>
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:if="{{length == 5}}"> 1 </view>

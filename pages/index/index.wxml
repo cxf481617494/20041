@@ -1,13 +1,44 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- 轮播图开始 -->
+    <view class=" swiper css7">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+              <image  src="{{item}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+<!-- 轮播图结束 -->
+<!-- 面包屑开始 -->
+  <view class="css3">
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class="scroll-view_H">
+        <view><view class="{{flag==0? 'select':'normal'}}" id="0" bindtap="switchNav">推荐</view></view>
+        <view><view class="{{flag==1? 'select':'normal'}}" id="1" bindtap="switchNav">热点</view></view>
+        <view><view class="{{flag==2? 'select':'normal'}}" id="2" bindtap="switchNav">北京</view></view>
+        <view><view class="{{flag==3? 'select':'normal'}}" id="3" bindtap="switchNav">社会</view></view>
+        <view><view class="{{flag==4? 'select':'normal'}}" id="4" bindtap="switchNav">娱乐</view></view>
+        <view><view class="{{flag==5? 'select':'normal'}}" id="5" bindtap="switchNav">问答</view></view>
+        <view><view class="{{flag==6? 'select':'normal'}}" id="6" bindtap="switchNav">图片</view></view>
+        <view><view class="{{flag==7? 'select':'normal'}}" id="7" bindtap="switchNav">科技</view></view>
+        <view><view class="{{flag==8? 'select':'normal'}}" id="8" bindtap="switchNav">汽车</view></view>
+        <view><view class="{{flag==9? 'select':'normal'}}" id="9" bindtap="switchNav">体育</view></view>
+        </view>
+     </scroll-view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 面包屑结束 -->
+  <!-- 列表开始 -->
+  <view wx:for="{{list}}" class="css1" wx:key="goods_id"  data-goodsid="{{list[index].goods_id}}" catchtap="catchTapCategory">
+    <image class="shop_img" src="{{item.goods_img}}" ></image>
+        <view class="css5" >{{list[index].goods_name}}</view>
+        <view class="css9"> $ {{list[index].shop_price}}</view>
   </view>
-</view>
+  <!-- 列表结束 -->
+
+ 
+
+  
+

@@ -1,18 +1,48 @@
 // goods/goods.js
 Page({
-
+  tapName: function(event) {
+    //登录
+    wx.login({
+      success (res) {
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://www.259775.top/api/login',
+            data: {
+              code: res.code
+            },
+            success(res){
+              //将token存入本地存储
+                wx.setStorage({
+                  data: res.data.token,
+                  key: 'token',
+                })
+                wx.getUserInfo({
+                  success(res){
+                    console.log(res);
+                  }
+                })
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })
+  },
+ 
   /**
    * 页面的初始数据
    */
   data: {
-
+   
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -62,5 +92,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //获取用户信息
+  getUserInfo: function(e) {
+    console.log(e)
+   
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
   }
 })

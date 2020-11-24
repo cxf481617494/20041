@@ -1,0 +1,241 @@
+.minePage {
+  background-color: #edece8;
+  padding-bottom: 50rpx;
+  height: 100%;
+}
+.login {
+  height: 45vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #123456;
+}
+.login .login_btn {
+  border: 1rpx solid #123456;
+  padding: 20rpx;
+  color: #123456;
+  text-align: center;
+}
+.my_bg {
+  position: relative;
+  height: 45vh;
+  overflow: hidden;
+}
+.my_bg .avatar_bg {
+  width: 100%;
+  filter: blur(10rpx);
+}
+.my_bg .avatar {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+.my_bg .avatar image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.my_bg .userName {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.my_main {
+  width: 90%;
+  margin: 0 auto;
+  color: #123456;
+  font-size: 28rpx;
+}
+.my_main .goods_mune {
+  display: flex;
+  height: 100rpx;
+  padding: 10rpx 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+.my_main .goods_mune .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.my_main .goods_order .order_title {
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .goods_order .order_mune {
+  display: flex;
+  margin: 20rpx 0;
+}
+.my_main .goods_order .order_mune navigator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 0;
+  background-color: #fff;
+}
+.my_main .goods_order .order_mune navigator .iconfont {
+  color: #ff2d4a;
+}
+.my_main .goods_order .order_address {
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .system_server {
+  margin: 20rpx 0;
+}
+.my_main .system_server .contact_kefu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .system_server .feedback {
+  padding: 10rpx;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+  background-color: #fff;
+}
+.my_main .system_server .about_us {
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_main .tuijian {
+  padding: 10rpx;
+  background-color: #fff;
+}
+page{
+  background:#fefefe;
+}
+.container{
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  padding-bottom:14rpx;
+	background:#e02e24;
+  width: 750rpx;
+  height:250rpx;
+}
+
+.userinfo-avatar {
+	width: 140rpx;
+	height: 140rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+  border:2px solid #e65850;
+}
+
+.userinfo-nickname {
+  color: #FFF;
+}
+
+
+.version {
+  width:100%;
+  height: 40rpx;
+	line-height: 40rpx;
+	font-size: 24rpx;
+	text-align: center;  
+  padding: 40rpx;
+}
+
+.my-item{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 100rpx;
+}
+
+.about{
+    width: 100%;
+    background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 750rpx center;
+    background-size: 16rpx auto,750rpx auto;
+    margin: 20rpx 0; 
+    height: 80rpx;
+    line-height: 80rpx;
+    padding-left: 100rpx;
+}
+
+.order-state{
+  display:flex;
+  width:100%
+}
+.order-state .order-state-item{
+  width:150rpx;
+  height:150rpx;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+.order-state .order-state-item image{
+  display:block;
+  width:40rpx;
+  height:40rpx;
+  margin:5px auto;
+}
+.order-state .order-state-item text{
+  font-size:24rpx
+}
+.allOrder text{
+  display:inline-block;
+  color:#111;
+  font-size:28rpx;
+}
+.allOrder view{
+  display:inline-block;
+  position:absolute;
+  right:31px;
+  color:#E02E24;
+  font-size:24rpx;
+}
+.allOrder view image{
+  display:inline-block;
+  width:35rpx;
+  height:35rpx;
+  margin-top:-3px;
+}
+.my-info{
+  display:flex;
+  width:100%;
+  height: 160rpx;
+}
+.my-info .my-info-item{
+  width:187.5rpx;
+  height:160rpx;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+.my-info .my-info-item image{
+  display:block;
+  width:45rpx;
+  height:45rpx;
+  margin:7px auto;
+}
+.my-info .my-info-item text{
+  font-size:24rpx
+}
+.my-item image{
+  width:40rpx;
+  height:40rpx;
+  margin-top:-5rpx;
+  margin-right:15rpx
+}

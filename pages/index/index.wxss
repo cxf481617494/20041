@@ -1,21 +1,138 @@
-/**index.wxss**/
-.userinfo {
+.css1{
+  width: 350px;
+  height: 150px;
+  margin-left: 34px;
+  margin-bottom: 20px;
+  margin-top: 1px;
+  /* border: 1px solid green; */
+}
+.css2{
+  width: 150px;
+  height: 200px;
+  /* border: 1px solid green; */
+  margin-left: 220px;
+}
+.css3{
+  width: 373px;
+  height: 50px;
+  margin-top: 1px;
+  margin-left: 19px;
+}
+.css4{
+  width: 412px;
+  height: 7300px;
+  /* border: 1px solid green; */
+  /* margin-top: 100px;
+  margin-left: 20px; */
+}
+.css5{
+  float: left;
+  width: 200px;
+  height: 75px;
+  /* border: 1px solid green; */
+  margin-top: -150px;
+  margin-left: 150px; 
+}
+.css1 image{
+  width: 150px;
+  height: 150px;
+  /* margin-left: 199px; */
+}
+.marquee{
+  width:1690px;
+}
+.css7{
+  width: 100%;
+}
+.css7 image{
+  width: 100%;
+  height: 320rpx;
+}
+.css9{
+  float: left;
+  width: 200px;
+  height: 75px;
+  /* border: 1px solid green; */
+  margin-top: -100px;
+  margin-left: 150px; 
+}
+.css11{
+  /* float: left; */
+  width: 400px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 1px;
+  margin-left: 5px;
+}
+.css22{
+  float: left;
+  width: 501px;
+  height: 632px;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.css33{
+  float: left;
+  width: 501px;
+  height: 632px;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  margin-left: 130px;
+}
+.css44{
+  float: left;
+  width: 501px;
+  height: 632px;
+  /* border: 1px solid red; */
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+
+
+.navbg{
+  background-color: #F6F5F3;
+  height: 36px;
+  color: #000000;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.nav{
+  width: 85%;
+  height: 36px;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.add{
+  width: 15%;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 50px;
 }
-
-.usermotto {
-  margin-top: 200px;
+/* 1 */
+.scroll-view_H{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.normal{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+}
+.select{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: skyblue;
 }
